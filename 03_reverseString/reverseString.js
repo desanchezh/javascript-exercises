@@ -6,12 +6,12 @@ const reverseString = function(word) {
     }
     const arrayReversed = letterArray.reverse ();
 
-    wordReversedCommas = arrayReversed.toString()
-    
-    let wordReversed = wordReversedCommas.replace(/,/g,"")
-
+    let wordReversed = "";
+    for (let i = 0; i < arrayReversed.length; i++) {
+            wordReversed += arrayReversed [i];
+        }
     return wordReversed
-};
+}
 
 // Do not edit below this line
 module.exports = reverseString;
