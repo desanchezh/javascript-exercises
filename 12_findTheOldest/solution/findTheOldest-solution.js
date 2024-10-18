@@ -29,8 +29,6 @@ const getAge = function (person) {
 
 const findTheOldest = function (people) {
   const peopleOldestToYoungest = people.toSorted(
-    (person, nextPerson) => getAge(nextPerson) - getAge(person),
-  );
 
   const oldestPerson = peopleOldestToYoungest[0];
   return oldestPerson;
